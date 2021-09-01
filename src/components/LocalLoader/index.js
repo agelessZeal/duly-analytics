@@ -39,7 +39,7 @@ const LocalLoader = ({ fill }) => {
   return (
     <Wrapper fill={fill}>
       <AnimatedImg>
-        <img src={require(darkMode ? '../../assets/logo_white.svg' : '../../assets/duly.png')} alt="loading-icon" />
+        <img src={require(darkMode ? '../../assets/duly.png' : '../../assets/duly.png')} alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )
