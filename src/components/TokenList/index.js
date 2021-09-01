@@ -126,6 +126,7 @@ function TopTokenList({ tokens, itemMax = 10, useTracked = false }) {
   const [page, setPage] = useState(1)
   const [maxPage, setMaxPage] = useState(1)
 
+
   // sorting
   const [sortDirection, setSortDirection] = useState(true)
   const [sortedColumn, setSortedColumn] = useState(SORT_FIELD.VOL)
@@ -159,6 +160,7 @@ function TopTokenList({ tokens, itemMax = 10, useTracked = false }) {
       setMaxPage(Math.floor(formattedTokens.length / itemMax) + extraPages)
     }
   }, [tokens, formattedTokens, itemMax])
+
 
   const filteredList = useMemo(() => {
     return (
