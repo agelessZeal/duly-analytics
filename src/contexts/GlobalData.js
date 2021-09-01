@@ -571,8 +571,6 @@ export function useGlobalData() {
 
   const data = state?.globalData
 
-  console.log('data:',data)
-
   // const combinedVolume = useTokenDataCombined(offsetVolumes)
 
   useEffect(() => {
@@ -584,8 +582,12 @@ export function useGlobalData() {
       let allPairs = await getAllPairsOnUniswap()
       updateAllPairsInUniswap(allPairs)
 
+      console.log('allPairs:',allPairs)
+
       let allTokens = await getAllTokensOnUniswap()
       updateAllTokensInUniswap(allTokens)
+
+      console.log('allTokens:',allTokens)
     }
     if (!data && ethPrice && oldEthPrice) {
       fetchData()

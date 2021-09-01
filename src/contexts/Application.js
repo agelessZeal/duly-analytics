@@ -282,7 +282,6 @@ export function useListedTokens() {
     }
   }, [updateSupportedTokens, supportedTokens])
 
-  console.log('supportedTokens:',supportedTokens)
   if(supportedTokens){
     supportedTokens.push('0xe35aa1a17779d253236343ad0a6f5a5d8e71cb5b')
   }
