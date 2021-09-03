@@ -177,17 +177,17 @@ function SideNav({ history }) {
               <Link href="https://uniswap.org/docs/v2" target="_blank">
                 Docs
               </Link>
-            </HeaderText>
+            </HeaderText>*/}
             <HeaderText>
-              <Link href="https://discord.com/invite/FCfyBSbCU5" target="_blank">
-                Discord
+              <Link href="mailto:contact@duly.com" target="_blank">
+                Contact
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://twitter.com/dulyfoundation" target="_blank">
                 Twitter
               </Link>
-            </HeaderText> */}
+            </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (
